@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>enClose — Privacy & Support</title>
+  <style>
+    :root {
+      --bg: #0c0612;
+      --fg: #f4eef8;
+      --muted: #b9a8c8;
+      --line: rgba(244, 238, 248, 0.16);
+      --accent: #e8c4ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #3a1450 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #1a2a4a 0%, transparent 50%),
+        var(--bg);
+      color: var(--fg);
+      line-height: 1.65;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 22px 80px;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      letter-spacing: 0.02em;
+      margin: 0 0 8px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 36px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin: 32px 0 10px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--accent);
+    }
+    p, li { color: var(--fg); font-size: 1.02rem; }
+    ul { padding-left: 1.2em; }
+    a { color: var(--accent); }
+    .note {
+      margin-top: 40px;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy & Support</h1>
+    <p class="meta">enClose · Last updated: August 25, 2026</p>
+
+    <p>
+      This page explains how <strong>enClose</strong> handles information and how you can
+      reach us for support. The game is designed to work with minimal personal data.
+    </p>
+
+    <h2>Information We Collect</h2>
+    <ul>
+      <li>
+        <strong>Gameplay data on your device.</strong>
+        Settings, high scores, and similar preferences are stored locally on your device.
+      </li>
+      <li>
+        <strong>Optional platform features.</strong>
+        If you use Game Center or similar services, Apple (or the platform provider) may
+        process account and leaderboard data under their own privacy policies.
+      </li>
+      <li>
+        <strong>What we do not sell.</strong>
+        We do not sell your personal information.
+      </li>
+    </ul>
+
+    <h2>How Information Is Used</h2>
+    <p>
+      Local data is used only to run the game (for example restoring your settings and
+      best score). We do not use your data for third-party advertising networks in the
+      current version.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      enClose is a casual arcade game. We do not knowingly collect personal information
+      from children. If you believe a child has provided personal information to us,
+      please contact us and we will delete it where applicable.
+    </p>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      The app may open links to the App Store (for ratings) or this support page in your
+      system browser. Those services are governed by their own terms and privacy policies.
+    </p>
+
+    <h2>Support</h2>
+    <p>
+      Questions, feedback, or privacy requests:
+      <!-- TODO: replace with your real support email -->
+      <a href="mailto:support@example.com">support@example.com</a>
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      We may update this page from time to time. The “Last updated” date at the top will
+      change when we do.
+    </p>
+
+    <p class="note">
+      Replace the support email and adjust the data practices above before App Store
+      submission so they match what the shipping build actually does.
+    </p>
+  </main>
+</body>
+</html>
