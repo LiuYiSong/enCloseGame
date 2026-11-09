@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hello</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loop Makes</title>
+  <meta name="description" content="Loop Makes is a fast arcade game about enclosing enemies. Draw a loop, close it, and clear the field." />
+  <link rel="icon" href="icon-256.png" type="image/png" />
+  <link rel="apple-touch-icon" href="icon-256.png" />
+  <style>
+    :root {
+      --bg: #0c0612;
+      --fg: #f4eef8;
+      --muted: #b9a8c8;
+      --line: rgba(244, 238, 248, 0.16);
+      --accent: #e8c4ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #3a1450 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #1a2a4a 0%, transparent 50%),
+        var(--bg);
+      color: var(--fg);
+      line-height: 1.65;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 72px 22px 80px;
+      text-align: center;
+    }
+    .icon {
+      width: 128px;
+      height: 128px;
+      margin: 0 auto 28px;
+      border-radius: 22.37%;
+      overflow: hidden;
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.38);
+    }
+    .icon img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      letter-spacing: 0.02em;
+      margin: 0 0 8px;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1.08rem;
+      margin: 0 0 28px;
+    }
+    .store {
+      display: inline-block;
+      margin-bottom: 40px;
+      padding: 12px 22px;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 1.02rem;
+    }
+    .store:hover {
+      background: rgba(232, 196, 255, 0.12);
+    }
+    .about {
+      text-align: left;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    .about p {
+      margin: 0 0 14px;
+      font-size: 1.02rem;
+    }
+    footer {
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    footer a { color: var(--accent); }
+    footer span { margin: 0 10px; color: var(--line); }
+  </style>
 </head>
 <body>
-  <p>hello</p>
+  <main>
+    <div class="icon">
+      <img src="icon-256.png" width="128" height="128" alt="Loop Makes icon" />
+    </div>
+    <h1>Loop Makes</h1>
+    <p class="tagline">Draw a loop. Close it. Clear the field.</p>
+    <a class="store" href="https://apps.apple.com/app/id6806091245">View on the App Store</a>
+    <section class="about">
+      <p>
+        Loop Makes is a fast arcade game about enclosing enemies. Dash, close the
+        shape, and survive waves on a glowing CRT stage.
+      </p>
+    </section>
+    <footer>
+      <a href="privacy-support.html">Privacy Policy</a>
+      <span>·</span>
+      <a href="mailto:enclosegame@outlook.com">enclosegame@outlook.com</a>
+    </footer>
+  </main>
 </body>
 </html>
