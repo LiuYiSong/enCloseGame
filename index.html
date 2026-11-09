@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Loop Makes</title>
-  <meta name="description" content="Loop Makes is a fast arcade game about enclosing enemies. Draw a loop, close it, and clear the field." />
-  <link rel="icon" href="icon-256.png" type="image/png" />
-  <link rel="apple-touch-icon" href="icon-256.png" />
+  <title>anfengqi.cn</title>
+  <meta name="description" content="Games from anfengqi.cn." />
+  <link rel="icon" href="/loopmakes/icon-256.png" type="image/png" />
+  <link rel="apple-touch-icon" href="/loopmakes/icon-256.png" />
   <style>
     :root {
       --bg: #0c0612;
@@ -30,20 +30,6 @@
       max-width: 720px;
       margin: 0 auto;
       padding: 72px 22px 80px;
-      text-align: center;
-    }
-    .icon {
-      width: 128px;
-      height: 128px;
-      margin: 0 auto 28px;
-      border-radius: 23.5%;
-      overflow: hidden;
-      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.38);
-    }
-    .icon img {
-      display: block;
-      width: 100%;
-      height: 100%;
     }
     h1 {
       font-size: clamp(1.8rem, 4vw, 2.4rem);
@@ -53,58 +39,63 @@
     .tagline {
       color: var(--muted);
       font-size: 1.08rem;
-      margin: 0 0 28px;
+      margin: 0 0 36px;
     }
-    .store {
-      display: inline-block;
-      margin-bottom: 40px;
-      padding: 12px 22px;
-      border: 1px solid var(--accent);
-      border-radius: 999px;
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 1.02rem;
-    }
-    .store:hover {
-      background: rgba(232, 196, 255, 0.12);
-    }
-    .about {
-      text-align: left;
-      padding-top: 18px;
+    .game {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 18px 0;
       border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      color: inherit;
+      text-decoration: none;
     }
-    .about p {
-      margin: 0 0 14px;
-      font-size: 1.02rem;
+    .game:hover .name { color: var(--accent); }
+    .icon {
+      width: 64px;
+      height: 64px;
+      flex: 0 0 64px;
+      border-radius: 23.5%;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.38);
+    }
+    .icon img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .name {
+      display: block;
+      font-size: 1.2rem;
+    }
+    .blurb {
+      display: block;
+      color: var(--muted);
+      font-size: 0.95rem;
     }
     footer {
       margin-top: 36px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 0.95rem;
     }
     footer a { color: var(--accent); }
-    footer span { margin: 0 10px; color: var(--line); }
   </style>
 </head>
 <body>
   <main>
-    <div class="icon">
-      <img src="icon-256.png" width="128" height="128" alt="Loop Makes icon" />
-    </div>
-    <h1>Loop Makes</h1>
-    <p class="tagline">Weave. Loop. Destroy.</p>
-    <a class="store" href="https://apps.apple.com/app/id6806091245">View on the App Store</a>
-    <section class="about">
-      <p>
-        Loop Makes is a fast arcade game about enclosing enemies. Dash, close the
-        shape, and survive waves on a glowing CRT stage.
-      </p>
-    </section>
+    <h1>anfengqi.cn</h1>
+    <p class="tagline">Games</p>
+    <a class="game" href="/loopmakes/">
+      <span class="icon">
+        <img src="/loopmakes/icon-256.png" width="64" height="64" alt="Loop Makes icon" />
+      </span>
+      <span>
+        <span class="name">Loop Makes</span>
+        <span class="blurb">Weave. Loop. Destroy.</span>
+      </span>
+    </a>
     <footer>
-      <a href="privacy-support.html">Privacy & Support</a>
-      <span>·</span>
       <a href="mailto:enclosegame@outlook.com">enclosegame@outlook.com</a>
     </footer>
   </main>
