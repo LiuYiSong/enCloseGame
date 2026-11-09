@@ -34,24 +34,26 @@
     h1 {
       font-size: clamp(1.8rem, 4vw, 2.4rem);
       letter-spacing: 0.02em;
-      margin: 0 0 8px;
-    }
-    .tagline {
-      color: var(--muted);
-      font-size: 1.08rem;
       margin: 0 0 36px;
     }
-    .game {
+    .games {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--line);
+    }
+    .games li {
+      border-bottom: 1px solid var(--line);
+    }
+    .games a {
       display: flex;
       align-items: center;
       gap: 18px;
       padding: 18px 0;
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
       color: inherit;
       text-decoration: none;
     }
-    .game:hover .name { color: var(--accent); }
+    .games a:hover .name { color: var(--accent); }
     .icon {
       width: 64px;
       height: 64px;
@@ -85,16 +87,19 @@
 <body>
   <main>
     <h1>anfengqi.cn</h1>
-    <p class="tagline">Games</p>
-    <a class="game" href="/loopmakes/">
-      <span class="icon">
-        <img src="/loopmakes/icon-256.png" width="64" height="64" alt="Loop Makes icon" />
-      </span>
-      <span>
-        <span class="name">Loop Makes</span>
-        <span class="blurb">Weave. Loop. Destroy.</span>
-      </span>
-    </a>
+    <ul class="games">
+      <li>
+        <a href="/loopmakes/">
+          <span class="icon">
+            <img src="/loopmakes/icon-256.png" width="64" height="64" alt="Loop Makes icon" />
+          </span>
+          <span>
+            <span class="name">Loop Makes</span>
+            <span class="blurb">Weave. Loop. Destroy.</span>
+          </span>
+        </a>
+      </li>
+    </ul>
     <footer>
       <a href="mailto:enclosegame@outlook.com">enclosegame@outlook.com</a>
     </footer>
